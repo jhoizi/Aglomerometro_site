@@ -165,7 +165,7 @@ footer .copy{
 }
 
 
-@media screen and (max-width: 400px) {  
+@media screen and (max-width: 450px) {  
   .logo{
     float: none;
     text-align: center;
