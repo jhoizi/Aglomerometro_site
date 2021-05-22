@@ -165,17 +165,72 @@ footer .copy{
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {  
   .logo{
     float: none;
     text-align: center;
   }
   .menu{
     margin-top: 2rem;
+    margin-right: 1rem;
     float: none;
     text-align: center;
   }
   img{
     padding-right: 0;
+  }
+  .info{
+    position: absolute;
+    margin-left: -80%;
+    margin-top: 120%;
+    width: 80%;
+  }
+  .about{
+    position: absolute;
+    margin-top: 120%;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .about p{
+    text-align: justify;
+  }
+  footer{
+    height: 45%;
+    margin-top: 300%;
+    padding: 0;
+    text-align: center;
+  }
+  footer .equipe{
+    margin-left: 25%;
+    margin-top: 5%;
+    float: left;
+  }
+  footer .email{
+    margin-left: 10%;
+    margin-top: 5%;
+    float: left;
+  }
+  footer .copy{
+    margin-left: 22.5%;
+    padding-top: 15%;
+    margin-top: 50%;
+    font-weight: bold;
+    text-align: center; 
+  }
+  #estabelecimento{
+    border-radius: 15%;
+    padding: 2rem;
+    width: 70%;
+    height: 70%;
+    top: 10%;
+    left: 6.5%;
+  }
+  #bt{
+    position: relative;
+    float: right;
+    width: 7%;
+    top: -85%;
+    margin-left: 15%;
+    cursor: pointer;
   }
 }
