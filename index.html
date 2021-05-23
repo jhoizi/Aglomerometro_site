@@ -8,6 +8,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <header class="header">
@@ -17,15 +18,17 @@
       </div>
       <nav>
         <ul class="menu">
-          <a href="#home"><li>Home</li></a>
-          <a href="#sobre"><li>Sobre</li></a>
-          <a href="#contato"><li>Contato</li></a>
+          <a href="#home" onclick="closeMenu()"><li>Home</li></a>
+          <a href="#sobre" onclick="closeMenu()"><li>Sobre</li></a>
+          <a href="#contato" onclick="closeMenu()"><li>Contato</li></a>
         </ul>
       </nav>
+      <img id="menuOpen" src="./src/icon-menu-open.png" alt="" onclick="openMunu()">
+      <img id="menuClose" src="./src/icon-menu-close.png" alt="" onclick="closeMenu()">
     </header>
 
     <main>
-      <section class="lista">
+      <section class="lista" id="home">
         <table>
           <tr>
             <th>Estabelecimentos</th>

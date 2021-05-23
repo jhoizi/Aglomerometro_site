@@ -1,8 +1,17 @@
 var tela = document.getElementById("estabelecimento");
 var b = document.body;
 tela.style.visibility = "hidden";
+let scrren = screen.width
+let imgClose = document.getElementById('menuClose')
+let img = document.getElementById("menuOpen")
+let menuop = document.querySelector('.menu')
+const widthScrren = 420
+if (scrren > widthScrren) {
+  imgClose.style.visibility = 'hidden'
+  img.style.visibility = 'hidden'
+}
 
-var dados = {0 : {nome : "SupermerCaju", area : "1000m²", capacidade : "440", funcionarios : "25", presentes : "200", situacao :                "Nível de aglomeração aceitável"},
+var dados = {0 : {nome : "SupermerCaju", area : "1000m²", capacidade : "440", funcionarios : "25", presentes : "200",         situacao :                "Nível de aglomeração aceitável"},
              
              1 : {nome : "Nagy Confecções", area : "600m²", capacidade : "265", funcionarios : "15", presentes : "100", situacao : "Nível de aglomeração aceitável"},
              
@@ -14,7 +23,7 @@ var dados = {0 : {nome : "SupermerCaju", area : "1000m²", capacidade : "440", f
 }
 
 function abrir_tela(cod){
-  b.style.visibility = "hidden";
+  b.style.visibility = 'hidden'
   tela.style.visibility = "visible";
 
   var estabelecimento = dados[cod]["nome"];
@@ -30,8 +39,6 @@ function abrir_tela(cod){
   var fun = document.getElementById("funcionarios");
   var pre = document.getElementById("presentes");
   var sit = document.getElementById("situacao");
-
-  
   nome.innerHTML = estabelecimento;
   are.innerHTML = "<b>Aréa do estabelecimento:</b>     " + area + ".";
   cap.innerHTML = "<b>Capacidade:</b>     " + capacidade + " pessoas.";
@@ -41,6 +48,19 @@ function abrir_tela(cod){
 }
 
 function fechar_tela(){
-  b.style.visibility = "visible";
+  b.style.visibility = 'visible'
   tela.style.visibility = "hidden";
 }
+
+let openMunu = () => {
+  menuop.classList.add('mopen')
+  img.style.visibility = 'hidden'
+  imgClose.style.visibility = 'visible'
+}
+
+let closeMenu = () => {
+  menuop.classList.remove('mopen')
+  scrren > widthScrren ? img.style.visibility = 'hidden' : img.style.visibility = 'visible'
+}
+
+

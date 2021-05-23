@@ -22,8 +22,10 @@ p{
 .header{
   overflow: hidden;
   width: 100%;
-  padding: 3% 0;
+  height: 10%;
+  padding: 5% 0;
   background: #F09905;
+  border-radius: 0 0 0 7rem;
   font-size: 18px;
 }
 .menu{
@@ -101,6 +103,7 @@ td{
   visibility: hidden;
   position: absolute;
   border: solid;
+  background: white;
   border-radius: 10%;
   padding: 2rem;
   width: 30%;
@@ -140,7 +143,9 @@ td{
 footer{
   height: 35%;
   padding: 1.5rem;
-  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+/*   box-shadow: inset 0px 0px 4px 1px #F09905; */
+  border: 2px solid #F09905;
+  border-radius: 7rem 0 0 0;
   font-size: 1rem;
   font-weight: 500;
   text-align: center;
@@ -165,24 +170,51 @@ footer .copy{
 }
 
 
-@media screen and (max-width: 450px) {  
+@media screen and (max-width: 420px) {  
   .logo{
+    margin-left: 2%;
     float: none;
     text-align: center;
+  }
+  .header{
+    height: auto;
   }
   .menu{
-    margin-top: 2rem;
-    margin-right: 1rem;
-    float: none;
-    text-align: center;
+    margin-top: -100%;
+    margin-right: 42%;
+    visibility: hidden;
+  }
+  .mopen{
+    margin-top: -.1px;
+    visibility: visible;
+  }
+  #menuOpen{
+    visibility: visible;
+    width: 40px;
+    height: 40px;
+    margin-top: -10%;
+    margin-left: 84%;
+  }
+  #menuClose{
+    width: 40px;
+    height: 40px;
+    margin-top: -59%;
+    margin-left: 85%;
+    visibility: hidden;
+  }
+  li{
+    padding-bottom: 2rem;
   }
   img{
+    margin-left: 15%;
     padding-right: 0;
   }
+  main{
+    display: block;
+  }
   .info{
-    position: absolute;
-    margin-left: -80%;
-    margin-top: 120%;
+    display: block;
+    margin-left: 10%;
     width: 80%;
   }
   .about{
@@ -219,18 +251,15 @@ footer .copy{
   }
   #estabelecimento{
     border-radius: 15%;
+    background: white;
     padding: 2rem;
-    width: 70%;
-    height: 70%;
-    top: 10%;
+    width: 260px;
+    height: 400px;
     left: 6.5%;
+    position: absolute;
   }
   #bt{
-    position: relative;
-    float: right;
-    width: 7%;
-    top: -85%;
-    margin-left: 15%;
-    cursor: pointer;
+    margin-top: -3rem;
+    width: 1.5rem;
   }
 }
