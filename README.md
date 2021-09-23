@@ -1,6 +1,6 @@
 # Aglomerometro_site
 
-Projeto da Universidade.
+Projeto realizado para ser apresentado na Universidade Estadual da Paraíba (UEPB).
 
 Projeto de um site criado para ser apresentado na disciplina de programação.
 
